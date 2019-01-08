@@ -13,7 +13,7 @@ class Shader
 public:
 	unsigned int ProgramId;
 
-	Shader(const std::string& vertex_path, const std::string& fragment_path);
+	Shader(const std::string& vertex_path, const std::string& fragment_path, const std::string& geometry_path = "");
 	
 	// compile shader 
 	bool Compile();
@@ -30,6 +30,7 @@ public:
 private:
 	std::string _vertex_shader_path;
 	std::string _fragment_shader_path;
+	std::string _geometry_shader_path;
 
 	bool _is_compiled;
 };

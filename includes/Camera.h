@@ -41,5 +41,6 @@ public:
 	float MouseSensitivity;
 	float Zoom;
 
-	Camera()
+	Camera();
+	~Camera();
 };
